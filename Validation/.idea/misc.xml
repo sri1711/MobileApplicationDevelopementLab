@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GithubRepository/MobileApplicationDevelopementLab/Validation/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/GithubRepository/MobileApplicationDevelopementLab/Validation/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/GithubRepository/MobileApplicationDevelopementLab/app/src/main/res/drawable/et_background.xml" value="0.23425925925925925" />
         <entry key="..\:/GithubRepository/MobileApplicationDevelopementLab/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
       </map>

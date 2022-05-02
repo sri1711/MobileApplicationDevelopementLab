@@ -1,5 +1,6 @@
 package com.rajalakshmi.validationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 else{
                     Toast.makeText(this,"Welcome Home $username",Toast.LENGTH_SHORT).show()
+                    val intent  = Intent(this,HomeActivity::class.java)
+                    intent.putExtra("uname",username)
+                    startActivity(intent)
+
                 }
 
             }

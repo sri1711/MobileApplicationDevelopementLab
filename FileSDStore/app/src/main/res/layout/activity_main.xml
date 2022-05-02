@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etFile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/et_background"
+
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+            android:paddingRight="15dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/et_background"
+            android:hint="Student Name"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+            android:paddingRight="15dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGPA"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/et_background"
+            android:hint="Student Name"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+            android:paddingRight="15dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/btn_color"
+        android:fontFamily="@font/cantora_one"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:text="Write Data"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btn_color"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:layout_marginRight="5dp"
+        android:text="Read Data"
+        android:fontFamily="@font/cantora_one"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
