@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_color"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/cantora_one"
+        android:gravity="center"
+        android:text="REC Welcomes\nYou"
+        android:textColor="@color/text_color"
+        android:textSize="42sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="32sp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etUserId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/et_background"
+        android:hint="Email ID"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_color"
+        android:paddingRight="15dp"
+        android:textSize="18dp"
+        android:singleLine="true"
+        android:textColorHint="@color/hint_color"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="20dp"
+        app:boxBackgroundMode="none">
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/et_background"
+            android:hint="Password"
+            android:paddingVertical="0dp"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_color"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btn_color"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:text="Get Started"
+        android:fontFamily="@font/cantora_one"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>
