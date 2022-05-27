@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/castoro"
+            android:text="SMSHelper"
+            android:textColor="@color/text_color"
+            android:textSize="45sp" />
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/et_background"
+            android:hint="Enter Mobile no"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/content_Textinput"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="20dp"
+            app:hintEnabled="false"
+            app:boxStrokeErrorColor="#FF0000"
+            android:layout_marginHorizontal="20dp"
+            app:boxBackgroundMode="none"
+            >
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/et_background"
+                android:hint="Enter Message Content"
+                android:gravity="start"
+                android:paddingVertical="12dp"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"
+                android:inputType="text"
+                android:textColorHint="@color/hint_color"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sendno"
+            android:layout_width="308dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Send Message"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/btn_color"
+            android:textSize="18dp"
+            android:textColor="@color/text_color_Btn"
+            app:cornerRadius="12dp"
+            app:rippleColor="@color/hint_color"
+            />
+    </LinearLayout>
+
+</LinearLayout>
